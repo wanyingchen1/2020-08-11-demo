@@ -1,14 +1,17 @@
 import React from 'react'
-import './login.less'
-import LoginForm from '../../components/login/index'
-// 登陆的页面
+import { Link } from 'react-router-dom'
 
 export default class Login extends React.Component{
+
     render(){
         return(
-            <div className='login'>
-                <header className='login-head'>123</header>
-                <div className='login-content'>333</div>
+            <div>
+                {/* <div className='out'>
+                    {pictureArr.map(item=>{
+                        return <Picture color={item.color} src={item.id} title={item.id}/>
+                    })}
+                </div> */}
+                <Link to="/main" >Login</Link>
             </div>
         )
     }

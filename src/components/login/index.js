@@ -1,15 +1,16 @@
 import React from 'react'
-import {Form,Input} from 'antd'
-// 登陆的组件
-const FormItem=Form.Item
-export default class Login extends React.Component{
+import propTypes from 'prop-types'
+import './index.less'
+
+// 图片组件
+export default class Picture extends React.Component{
     render(){
+        const {color}=this.props
         return(
-            <Form>
-                <FormItem label='用户名'>
-                    <Input/>
-                </FormItem>
-            </Form>
+                <div className='pictureDiv'style={{backgroundColor:`${color}`}}></div>
         )
     }
 }
+Picture.propTypes = { //.propTypes是react规定的名称,不可以修改
+    title: propTypes.string //设置title的类型
+};
