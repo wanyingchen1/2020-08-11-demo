@@ -26,14 +26,12 @@ export default class Main extends React.Component{
     render(){
         return(
             <div className='login'>
-                {/* <HashRouter> */}
                  <Layout>
                     <Header>
                         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
-                            <Menu.Item key="0"onClick={this.onShow}>三</Menu.Item>
-                            <Menu.Item key="1"><Link to="/main/music">音乐</Link></Menu.Item>
-                            <Menu.Item key="2"><Link to='/main/game'>游戏</Link></Menu.Item>
-                            <Menu.Item key="3">乱七八糟</Menu.Item>
+                            <Menu.Item key="0"><Link to="/main/music">音乐</Link></Menu.Item>
+                            <Menu.Item key="1"><Link to='/main/game'>游戏</Link></Menu.Item>
+                            <Menu.Item key="2"onClick={this.onShow}>乱七八糟</Menu.Item>
                         </Menu>
                     </Header>
                     <Content
@@ -59,7 +57,6 @@ export default class Main extends React.Component{
                     visible={this.state.visible}
                 >
                 </Drawer>
-                {/* </HashRouter> */}
             </div>
         )
     }

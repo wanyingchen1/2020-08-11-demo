@@ -11,7 +11,10 @@ export default class Game extends React.Component{
         return(
                 <div className='out'>
                     {pictureArr.map(item=>{
-                        return <Picture color={item.color} src={item.id} title={item.id}/>
+                        return (
+                        <div className='outpicture'>
+                            <Picture color={item.color} src={item.id} title={item.id}/>
+                        </div>)
                     })}
                 </div>
         )
